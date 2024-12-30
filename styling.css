@@ -1,0 +1,258 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
+}
+
+/* Style for the navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+li {
+  margin: 0 15px;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Style for the Contact Us button */
+.contact-btn {
+  color: white;
+  background-color: #b32d00;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #111;
+}
+
+/* Styling for the contact form (hidden by default) */
+#contact-form {
+  display: none;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 2px solid #333;
+  width: 300px;
+  margin: 20px auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form button {
+  background-color: #b32d00;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #45a049;
+}
+
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 700px;
+  background-color: seagreen;
+  background-image: url(6Health.png.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero > h3 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  padding: 2.5em;
+}
+
+/* Section with a background color */
+.super {
+  background-color: #001433;
+}
+
+/* Container for video and text */
+.container {
+  width: 100%;
+  height: 800px;
+  background-image: url(heart.jpg);
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.video {
+  width: 60%;
+}
+
+.text {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* Services section */
+#services {
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.section-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-align: center;
+}
+
+.section-title p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #ddd;
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  background-color: #1e2a47;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-card .service-title {
+  font-size: 1.8em;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1.1em;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.service-card:hover .service-title {
+  color: #ffd700;
+}
+
+.service-card:hover p {
+  color: #fff;
+}
+
+/* Button styles */
+.cta-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #1e2a47;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #ffd700;
+  color: #1e2a47;
+}
+
+
+        /* Modal background styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
